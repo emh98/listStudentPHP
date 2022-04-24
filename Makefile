@@ -37,6 +37,18 @@ be-logs: ## Tails the Symfony dev log
 ssh-be: ## ssh's into the be container
 	U_ID=${UID} docker exec -it --user ${UID} ${DOCKER_BE} bash
 
+create-entity: ## Create Entity
+	U_ID=${UID} docker exec -it --user ${UID} ${DOCKER_BE} symfony console make:entity
+
+create-controller: ## Create Controller
+	U_ID=${UID} docker exec -it --user ${UID} ${DOCKER_BE} symfony console make:controller
+
+create-migration: ## Create migration
+	U_ID=${UID} docker exec -it --user ${UID} ${DOCKER_BE} symfony console make:migration
+
+migrate: ## migrate database
+	U_ID=${UID} docker exec -it --user ${UID} ${DOCKER_BE} symfony console doctrine:migrations:migrate
+
 ssh-db: ## ssh's into the be container db
 	docker exec -it ${DOCKER_DB} bash
 
