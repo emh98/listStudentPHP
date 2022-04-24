@@ -17,6 +17,8 @@ Esto es necesario para que funcione las librerias de webpack-bundle para symfony
 9. Ejecuta el comando `make migrate` esto para montar las tablas en la base de datos.
 
 Con esto terminaria la instalación basíca
+### posibles alertas:
+Si aparece que la gtabla prueba ya esta creada no se preocupe que la aplicación funcionara con total normalidad.
 
 ## Datos importantes:
 ### Base de datos
