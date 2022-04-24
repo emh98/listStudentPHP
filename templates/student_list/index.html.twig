@@ -4,12 +4,18 @@
 
 {% block body %}
 
-<form>
-  <label for="fname">Nombre:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Apellido:</label><br>
-  <input type="text" id="lname" name="lname"><br>
-  <input type="button" onclick="alert('Hello World!')" value="Agregar Estudiante">
-</form>
+<label for="fname">Nombre:</label><br>
+<input type="text" id="fname" name="fname" ><br>
+<label for="lname">Apellido:</label><br>
+<input type="text" id="lname" name="lname" ><br>
+<input type="button" id="cargar_datos" value="Agregar Estudiante">
+<div id="charge"></div>
+<div id="result"></div>
+
 
 {% endblock %}
+
+{% block javascripts %}
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="{{ asset('/js/newStudent.js')}}"></script>
+{% endblock%}
