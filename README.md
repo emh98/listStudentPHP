@@ -31,4 +31,4 @@ utilisando el comando `make`  saldran todos los comandos make que estan configur
 ## Funcionamiento
 
 1. Solo oprime el boton agregar estudiante para que aparesca y desaparesca la lista de estudiantes.
-2. Para agregar un nuevo estudiante es obligatorio que ambos campos tengan texto escrito.
+2. Para agregar un nuevo estudiante es obligatorio que ambos campos tengan texto escrito y luego oprima el boton agregar estudiante.
